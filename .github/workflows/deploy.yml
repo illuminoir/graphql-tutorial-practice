@@ -1,0 +1,29 @@
+name: GraphQL Catstronauts CI/CD
+
+on:
+  push:
+    branches:
+      - main  # Runs when pushing to main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies on client
+        run: npm install
+        working-directory: client
+
+      - name: Build Project client
+        run: npm run build
+        working-directory: client
+
+      - name: Install Dependencies on server
+        run: npm install
+        working-directory: server
+
+      - name: Build Project server
+        run: npm run start
+        working-directory: server
