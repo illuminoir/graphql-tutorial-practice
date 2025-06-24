@@ -1,7 +1,7 @@
 {
   "name": "catstronauts-server-complete",
   "version": "1.0.0",
-  "description": "back-end demo app for Apollo's lift-off course",
+  "description": "back-end app for Apollo's lift-off course",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index",
@@ -16,12 +16,11 @@
     "@apollo/server": "^4.12.2",
     "@types/jest": "^30.0.0",
     "dotenv": "^16.0.0",
-    "easygraphql-tester": "^6.0.1",
     "graphql": "^16.11.0",
     "jest": "^30.0.2",
     "nodemon": "^3.0.1"
   },
-  "author": "Raphael Terrier @R4ph-t",
+  "author": "Allan Khelifi",
   "license": "MIT",
   "private": true
 }
